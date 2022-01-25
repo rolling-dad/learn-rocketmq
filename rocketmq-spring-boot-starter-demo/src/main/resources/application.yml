@@ -1,3 +1,5 @@
+server:
+  port: 11111
 # 应用名称
 spring:
   application:
@@ -6,3 +8,4 @@ rocketmq:
   name-server: 127.0.0.1:9876
   producer:
     group: demo-group
+
