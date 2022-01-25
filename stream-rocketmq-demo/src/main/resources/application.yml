@@ -1,0 +1,17 @@
+# 应用名称
+spring:
+  application:
+    name: stream-rocketmq-demo
+  cloud:
+    stream:
+      bindings:
+        input:
+          content-type: application/json
+          destination: demo-topic
+          group: demo-group
+        output:
+          content-type: application/json
+          destination: demo-topic
+      rocketmq:
+        binder:
+          name-server: 127.0.0.1:9876
